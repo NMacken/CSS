@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin:2.5px;
+    padding:0;
+}
+body {
+    background-color: #222;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-gap: 5px;
+}
+
+.bg1 {
+    height: 350px;
+    background: url('CSushi.jpg');
+    background-size: cover;
+}
+.bg2 {
+    height: 75px;
+    background: url('backgroundblue.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg3 {
+    height: 400px;
+    background: url('backgroundblue.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+a {
+    color: #888;
+}
+.bg4 {
+    height: 700px;
+    background: url('backgroundblue.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
