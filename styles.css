@@ -1,43 +1,199 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bad+Script&family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bad+Script&family=Oranienbaum&display=swap');
+
+* {
     box-sizing: border-box;
-    margin:2.5px;
-    padding:0;
+    margin: 2.5px;
+    padding: 0;
 }
+
 body {
     background-color: #222;
     color: #333;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 200px;
     grid-gap: 5px;
 }
 
-.bg1 {
-    height: 350px;
-    background: url('CSushi.jpg');
-    background-size: cover;
+.box1 {
+    border-radius: 35px;
+    width: 100%;
+    height: auto;
 }
-.bg2 {
-    height: 75px;
+
+.box2 {
+    height: 100%;
     background: url('backgroundblue.png');
     background-size: cover;
     background-attachment: fixed;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Allura', cursive;
 }
-.bg3 {
-    height: 400px;
+
+.box3 {
+    height: 100%;
     background: url('backgroundblue.png');
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Oranienbaum', serif;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 2px;
 }
+
+.box4 {
+    height: 100%;
+    background: url('backgroundblue.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Oranienbaum', serif;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 2px;
+}
+
+.box5 {
+    height: 100%;
+    background: url('backgroundblue.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Oranienbaum', serif;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 2px;
+    list-style-position: inside;
+}
+
 a {
     color: #888;
+    line-height: 40px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.bg4 {
-    height: 700px;
+
+.box6 {
+    height: 100%;
     background: url('backgroundblue.png');
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Oranienbaum', serif;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 2px;
+    list-style-position: inside;
+}
+
+li:hover {
+    color: azure;
+}
+
+@media screen and (min-width: 1024px) {
+    * {
+        box-sizing: border-box;
+        margin: 2.5px;
+        padding: 0;
+    }
+
+    body {
+        background: url('backgroundblue.png');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 200px;
+        grid-gap: 5px;
+    }
+
+    .box1 {
+        border-radius: 35px;
+        width: 90%;
+        height: 7in;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 50px;
+        display: block;
+    }
+
+    .box2 {
+        height: 100%;
+        justify-content: center;
+        font-size: 25px;
+        font-family: 'Allura', cursive;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .box3 {
+        height: 100%;
+        font-family: 'Oranienbaum', serif;
+        font-size: 16px;
+        text-align: left;
+        padding-left: 2px;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 80px;
+    }
+
+    .box4 {
+        height: 100%;
+        font-family: 'Oranienbaum', serif;
+        font-size: 16px;
+        text-align: center;
+        padding-left: 2px;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 200px;
+    }
+
+    .box5 {
+        height: 100%;
+        font-family: 'Oranienbaum', serif;
+        text-align: left;
+        font-size: 16px;
+        padding-left: 2px;
+        list-style-position: inside;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 230px
+    }
+
+    a {
+        color: #222;
+        line-height: 40px;
+        font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: left;
+        margin-top: -240px;
+    }
+
+    .box6 {
+        height: 100%;
+        font-family: 'Oranienbaum', serif;
+        font-size: 16px;
+        text-align: left;
+        padding-left: 2px;
+        list-style-position: inside;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 560px
+    }
+
+    li:hover {
+        color: azure;
+    }
 }
